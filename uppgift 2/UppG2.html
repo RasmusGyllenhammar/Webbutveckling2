@@ -11,15 +11,18 @@
 
    
     //uppgift 2 - 1.3
-    for(var i = 0; i <=200; i++) //for loop som skriver ut 200 röda rektanglar 
+   /* for(var i = 0; i <=200; i++) //for loop som skriver ut 200 röda rektanglar 
     {
         rectangle(random(200), random(200), 10, 10, "red" ) // små rektanglar(10px) är slumpad mellan 200 höjd och bredd
-    }
+    }*/
 
+
+    //uppgift 2 - 1.4
+    let randomColors = ["red", "yellow", "blue", "green"]; //här skapar jag en lista med olika färger som sedan ska slumpas
     
-    for(var i = 0; i <=200; i++)
+    for(var i = 0; i <=10000; i++) //Skriver ut flera pixlar(10000st) med olika färger
     {
-        rectangle(random(600), random(600), 10, 10, "yellow" )
+        rectangle(random(600), random(600), 10, 10, randomColors[random(0,3)] ); // skapar rektanglar och slumpar färgerna 
     }
 
 
