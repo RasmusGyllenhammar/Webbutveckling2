@@ -1,0 +1,36 @@
+header {
+  background-color: red;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 75%;
+}
+
+li {
+  display: inline;
+}
+
+body {
+  background-image: url("stadium.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.infotext {
+  font-style: Italic;
+  color: white;
+}
+
+.bild {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=main.css.map */

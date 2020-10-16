@@ -1,0 +1,41 @@
+.contact button {
+  background: #6fc0e6;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 140px;
+  background-color: red;
+  color: #fdfcfb;
+  width: 70%;
+}
+
+header button {
+  background-color: #6fc0e6;
+}
+
+header button:hover {
+  background: red;
+}
+
+p {
+  font-style: italic;
+  color: #fdfcfb;
+}
+
+body {
+  background-image: url("firmino2019.png");
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+@import "./_variables.scss";
+@import "./_functions.scss";
+
+
+.contact button {
+    background: $primaryButton;
+}
+
+//TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+header {
+
+    @include flexCenter(column);
+    @include margin20();
+    background-color: red;
+    
+    color: $textColor;
+    button{
+        background-color: $primaryButton;
+        &:hover {
+            background: red;
+        }
+    }
+    width: 100% - 30%;
+}
+
+p{
+    @include font();
+    @include change_color($textColor);
+}
+
+body{
+    @include image($firmino);
+}

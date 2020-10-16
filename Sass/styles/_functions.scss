@@ -1,0 +1,27 @@
+@import "./_variables.scss";
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin font() {
+    font-style: italic;
+}
+
+@mixin image($url) {
+    background-image: $url;
+    
+}
+
+@mixin change_color($color) {
+    
+   color: $color; 
+}
+
+@mixin margin20() {
+
+    margin-top: 140px;
+}

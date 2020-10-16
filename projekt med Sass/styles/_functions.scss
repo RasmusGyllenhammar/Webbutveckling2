@@ -1,0 +1,30 @@
+@import "./variables";
+
+@mixin BackgroundColor($color) {
+    background-color: $color;
+}
+
+@mixin displayInline() {
+    display: inline;
+}
+
+@mixin image($url) {
+    
+        background-image: url($url);
+
+}
+
+
+@mixin backgrounSettings($repeat, $position, $size) {
+        background-repeat: $repeat;
+        background-position: $position;
+        background-size: $size;
+}
+
+@mixin fontItalic($Italic){
+    font-style: $Italic;
+}
+
+@mixin fontColor($color){
+    color: $color;
+}

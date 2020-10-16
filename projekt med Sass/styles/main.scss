@@ -1,0 +1,39 @@
+@import "./functions";
+@import "./variables";
+
+header{
+    @include BackgroundColor($redColor);
+    width: 100%;
+    
+}
+
+
+ul{
+    list-style-type: none;
+    margin-left: 75%;
+}
+ li{
+    
+   @include displayInline();
+}
+
+body{
+    @include image($manePicture);
+    @include backgrounSettings($noRepeat, $positionCenter, $sizeCover)
+
+} 
+
+.infotext{
+    @include fontItalic($fontItalic);
+    @include fontColor($whiteColor);
+}
+
+.bild{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-around;
+ //  box-shadow: 136px 40px 0px 13px rgba(234,84,245,0.67);
+ //padding: 10%;
+    
+}
