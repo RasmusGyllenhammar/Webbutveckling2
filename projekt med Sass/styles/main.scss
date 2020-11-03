@@ -5,35 +5,68 @@ header{
     @include BackgroundColor($redColor);
     width: 100%;
     
+    
 }
 
 
 ul{
     list-style-type: none;
     margin-left: 75%;
+    transform: translateY(-10%);
 }
  li{
     
    @include displayInline();
+  
 }
 
 body{
-    @include image($manePicture);
+   // text-align: center;
+   // @include image($manePicture);
+   background-image: url($anfield);
+   //@include BackgroundColor($anfield);
     @include backgrounSettings($noRepeat, $positionCenter, $sizeCover)
 
 } 
 
 .infotext{
+    @include displayFlex($flex);
     @include fontItalic($fontItalic);
     @include fontColor($whiteColor);
+    @include justifyContentCenter($center);
+    @include BackgroundColor($redColor);
+   
 }
 
 .bild{
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    justify-content: space-around;
- //  box-shadow: 136px 40px 0px 13px rgba(234,84,245,0.67);
- //padding: 10%;
+  
+   @include displayFlex($flex);
+   @include justifyContentSpaceAround($spaceRnd); 
+}
+
+.textOne{
+    @include displayFlex($flex);
+    @include justifyContentSpaceAround($spaceRnd);
+    @include fontColor($blueColor);
+    @include BackgroundColor($whiteColor);
+}
+
+.secondBild{
+    margin-top: 5%;
+    @include displayFlex($flex);
+    @include justifyContentSpaceAround($spaceRnd);
+    
+}
+.headerText{
+    @include displayFlex($flex);
+    @include justifyContentCenter($center);
+    transform: translateY(-100px);
+    
+   
+}
+
+.logo{
+    margin-right: 90%;
+    
     
 }

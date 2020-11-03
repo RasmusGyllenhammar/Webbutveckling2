@@ -28,3 +28,16 @@
 @mixin fontColor($color){
     color: $color;
 }
+
+@mixin displayFlex($flex) {
+    display: flex;
+}
+
+@mixin justifyContentSpaceAround($style){
+    justify-content: $style;
+}
+
+@mixin justifyContentCenter($style) {
+    justify-content: $style;
+}
+
