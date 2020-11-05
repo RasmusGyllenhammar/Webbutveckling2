@@ -5,39 +5,35 @@
 }
 
 @mixin displayInline() {
-    display: inline;
+    display: inline; //Gör så att min meny blir vågrätt 
 }
 
 @mixin image($url) {
     
-        background-image: url($url);
-
+        background-image: url($url); //ändrar bakgrunden till en bild
 }
 
-
+//denna gör så att bilden som bakrund täcker hela så den inte blir 
 @mixin backgrounSettings($repeat, $position, $size) {
         background-repeat: $repeat;
         background-position: $position;
         background-size: $size;
 }
 
-@mixin fontItalic($Italic){
-    font-style: $Italic;
-}
-
-@mixin fontColor($color){
+@mixin fontAndColor($font, $color){
+    font-style: $font;
     color: $color;
 }
 
-@mixin displayFlex($flex) {
-    display: flex;
+@mixin justifyContentSpaceAroundAndDisplayFlex($style, $flex){
+   
+    justify-content: $style;
+    display: $flex;
 }
 
-@mixin justifyContentSpaceAround($style){
+@mixin justifyContentCenterAndDisplayFlex($style, $flex){
+    
     justify-content: $style;
-}
-
-@mixin justifyContentCenter($style) {
-    justify-content: $style;
+    display: $flex;
 }
 

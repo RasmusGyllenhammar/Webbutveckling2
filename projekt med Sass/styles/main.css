@@ -8,6 +8,19 @@ ul {
   margin-left: 75%;
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
+  font-size: 20px;
+}
+
+ul a {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.836);
+  padding: 1%;
+}
+
+ul a:hover {
+  background-color: rgba(255, 255, 255, 0.836);
+  font-style: italic;
+  color: rgba(219, 40, 40, 0.774);
 }
 
 li {
@@ -22,51 +35,52 @@ body {
 }
 
 .infotext {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-style: Italic;
-  color: white;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.836);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: rgba(219, 40, 40, 0.774);
 }
 
 .bild {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .textOne {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: rgba(24, 24, 168, 0.712);
-  background-color: white;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.836);
+  background-color: rgba(219, 40, 40, 0.774);
 }
 
 .secondBild {
   margin-top: 5%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .headerText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
 }

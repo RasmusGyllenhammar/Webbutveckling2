@@ -13,53 +13,59 @@ ul{
     list-style-type: none;
     margin-left: 75%;
     transform: translateY(-10%);
+    font-size: 20px; 
+}
+ul a{
+    @include fontAndColor($fontItalic, $whiteColor);
+    padding: 1%;
+}
+
+ul  a:hover{
+    @include BackgroundColor($whiteColor);
+    @include fontAndColor($fontItalic, $redColor);
 }
  li{
     
-   @include displayInline();
-  
+     @include displayInline();
 }
 
 body{
-   // text-align: center;
-   // @include image($manePicture);
+   
    background-image: url($anfield);
-   //@include BackgroundColor($anfield);
+  
     @include backgrounSettings($noRepeat, $positionCenter, $sizeCover)
 
 } 
 
 .infotext{
-    @include displayFlex($flex);
-    @include fontItalic($fontItalic);
-    @include fontColor($whiteColor);
-    @include justifyContentCenter($center);
+   
+   @include fontAndColor($fontItalic, $whiteColor);
+
+    @include justifyContentCenterAndDisplayFlex($center, $flex);
     @include BackgroundColor($redColor);
    
 }
 
 .bild{
-  
-   @include displayFlex($flex);
-   @include justifyContentSpaceAround($spaceRnd); 
+  @include justifyContentSpaceAroundAndDisplayFlex($spaceRnd, $flex)
 }
 
 .textOne{
-    @include displayFlex($flex);
-    @include justifyContentSpaceAround($spaceRnd);
-    @include fontColor($blueColor);
-    @include BackgroundColor($whiteColor);
+    //@include displayFlex($flex);
+    @include justifyContentSpaceAroundAndDisplayFlex($spaceRnd, $flex);
+    @include fontAndColor($fontItalic, $whiteColor);
+    @include BackgroundColor($redColor);
 }
 
 .secondBild{
     margin-top: 5%;
-    @include displayFlex($flex);
-    @include justifyContentSpaceAround($spaceRnd);
+   
+    @include justifyContentSpaceAroundAndDisplayFlex($spaceRnd, $flex)
     
 }
 .headerText{
-    @include displayFlex($flex);
-    @include justifyContentCenter($center);
+  
+    @include justifyContentCenterAndDisplayFlex($center, $flex);
     transform: translateY(-100px);
     
    
@@ -67,6 +73,4 @@ body{
 
 .logo{
     margin-right: 90%;
-    
-    
 }
