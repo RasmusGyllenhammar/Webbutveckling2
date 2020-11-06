@@ -1,11 +1,9 @@
 header {
   background-color: rgba(219, 40, 40, 0.774);
-  width: 100%;
 }
 
 ul {
-  list-style-type: none;
-  margin-left: 75%;
+  margin-left: 60%;
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
   font-size: 20px;
@@ -14,7 +12,7 @@ ul {
 ul a {
   font-style: italic;
   color: rgba(255, 255, 255, 0.836);
-  padding: 1%;
+  padding: 2%;
 }
 
 ul a:hover {
@@ -52,6 +50,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 5%;
 }
 
 .textOne {
@@ -87,5 +86,17 @@ body {
 
 .logo {
   margin-right: 90%;
+}
+
+footer {
+  background-color: rgba(219, 40, 40, 0.774);
+  margin-top: 1%;
+  text-align: center;
+}
+
+footer h1:hover {
+  background-color: rgba(255, 255, 255, 0.836);
+  font-style: italic;
+  color: rgba(219, 40, 40, 0.774);
 }
 /*# sourceMappingURL=main.css.map */

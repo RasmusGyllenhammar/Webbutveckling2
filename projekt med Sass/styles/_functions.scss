@@ -1,39 +1,44 @@
 @import "./variables";
 
+//sätter bakgrunden till en viss färg, tar in mina variabler med rgba schema palla skriva dem hela tiden
 @mixin BackgroundColor($color) {
     background-color: $color;
 }
 
+//Gör så att min meny blir vågrätt, kanske inte nödvändig att göra en funktion utav
 @mixin displayInline() {
-    display: inline; //Gör så att min meny blir vågrätt 
+    display: inline; 
 }
 
+//ändrar bakgrunden till en bild, denna hade jag kunnat lägga in i funktionen nedan med bakgrunds inställningar eftersom de sitter ihop hehe
 @mixin image($url) {
-    
-        background-image: url($url); //ändrar bakgrunden till en bild
+    background-image: url($url); 
 }
 
-//denna gör så att bilden som bakrund täcker hela så den inte blir 
+//denna gör så att bilden som bakrund täcker hela så den inte blir inzoomad på en viss del och att den inte repeterar sig samt att den är i center
 @mixin backgrounSettings($repeat, $position, $size) {
         background-repeat: $repeat;
         background-position: $position;
         background-size: $size;
 }
-
+//ändrar färg och font
 @mixin fontAndColor($font, $color){
     font-style: $font;
     color: $color;
 }
-
+//skapar spacearound och display flex, mest för att bilderna ska var i 3 kolumner
 @mixin justifyContentSpaceAroundAndDisplayFlex($style, $flex){
-   
     justify-content: $style;
     display: $flex;
 }
-
+//detta är för att det ska bli centrerat ex som titeln och text
 @mixin justifyContentCenterAndDisplayFlex($style, $flex){
-    
     justify-content: $style;
     display: $flex;
 }
-
+//Gör menyn lagd åt höger och höjer menyn lite uppåt samt ökar storleken på bokstäverna
+@mixin menuSettings(){
+    margin-left: 60%;
+    transform: translateY(-10%);
+    font-size: 20px;   
+}
