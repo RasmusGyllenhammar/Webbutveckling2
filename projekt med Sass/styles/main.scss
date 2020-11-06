@@ -2,7 +2,7 @@
 @import "./variables";
 
 header{
-    @include BackgroundColor($redColor);
+   @include BackgroundColor($redColor);
 }
 
 
@@ -12,34 +12,31 @@ ul{
    
 }
 ul a{
-    @include fontAndColor($fontItalic, $whiteColor);
-    padding: 2%;
+   @include fontAndColor($fontItalic, $whiteColor);
+   padding: 2%;
     
 }
 
-ul  a:hover{
-    @include BackgroundColor($whiteColor);
-    @include fontAndColor($fontItalic, $redColor);
+ul a:hover{
+   @include BackgroundColor($whiteColor);
+   @include fontAndColor($fontItalic, $redColor);
 }
  li{
-    
-     @include displayInline();
+   @include displayInline();
 }
 
 body{
    
    background-image: url($anfield);
-  
-    @include backgrounSettings($noRepeat, $positionCenter, $sizeCover)
+   @include backgrounSettings($noRepeat, $positionCenter, $sizeCover)
 
 } 
 
 .infotext{
    
    @include fontAndColor($fontItalic, $whiteColor);
-
-    @include justifyContentCenterAndDisplayFlex($center, $flex);
-    @include BackgroundColor($redColor);
+   @include justifyContentCenterAndDisplayFlex($center, $flex);
+   @include BackgroundColor($redColor);
    
 }
 
@@ -49,7 +46,6 @@ body{
 }
 
 .textOne{
-    //@include displayFlex($flex);
     @include justifyContentSpaceAroundAndDisplayFlex($spaceRnd, $flex);
     @include fontAndColor($fontItalic, $whiteColor);
     @include BackgroundColor($redColor);
@@ -57,7 +53,6 @@ body{
 
 .secondBild{
     margin-top: 5%;
-   
     @include justifyContentSpaceAroundAndDisplayFlex($spaceRnd, $flex)
     
 }
@@ -76,7 +71,7 @@ body{
 footer{
     @include BackgroundColor($redColor);
     margin-top: 1%;
-    text-align: center; 
+    text-align: $center; 
 
 }
 
